@@ -22,6 +22,13 @@ public class BooksController : ControllerBase
 
     }
 
+    //ListBooks
+    [HttpGet]
+    public IActionResult ListBooks()
+    {
+        return Ok(_books);
+    }
+
     //GetBooks
     [HttpGet("{id}")]
     public IActionResult GetBooks(int id)
