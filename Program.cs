@@ -7,10 +7,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
 
 //Setting function to be the lowercase route - author.
 builder.Services.AddRouting(option => option.LowercaseUrls = true);
+
+var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "BooksApi.Controllers.BooksController",
+    "Method": "CreateBook",
+    "RelativePath": "books",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "book",
+        "Type": "BooksApi.Models.ModelsBooks",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BooksApi.Models.ModelsBooks",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BooksApi.Controllers.BooksController",
+    "Method": "GetBooks",
+    "RelativePath": "books/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
